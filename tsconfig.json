@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "module": "es6",
+    "sourceMap": true,
+    "outDir": "compileToScript"
+},
+"include": [
+    "**/*.ts"
+],
+"exclude": [
+  "node_modules",
+  "**/*.spec.ts"
+]
+}

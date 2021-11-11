@@ -1,0 +1,74 @@
+$width: 100%;
+main {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-areas: "nav imag";
+    gap: 3%;
+}
+
+.nav {
+    grid-area: nav;
+    ul {
+        width: $width;
+        list-style: none;
+        padding: 0;
+        li {
+            font-family: "Pacifico";
+            padding: 7px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 10px solid #f05d22;
+            box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, .1), -2px -2px 5px 0 rgba(0, 0, 0, .1), 2px 2px 5px 0 rgba(0, 0, 0, .1), -2px 2px 5px 0 rgba(0, 0, 0, .1);
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+    }
+    .drink {
+        border-color: #4ae70c;
+        &:hover {
+            border: 1.5px solid darkgrey;
+            border-left: 10px solid #4ae70c;
+        }
+    }
+    .food {
+        border-color: #f5cc13;
+        &:hover {
+            border: 1.5px solid darkgrey;
+            border-left: 10px solid #f5cc13;
+        }
+    }
+}
+
+.imag {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    margin-right: 2%;
+    grid-area: imag;
+}
+
+.water {
+    background: no-repeat center/65% url(../image/water.jpg);
+}
+
+.beer {
+    background: no-repeat center/40% url(../image/beer.jpg);
+}
+
+.cake {
+    background: no-repeat center/60% url(../image/cake.jpg);
+}
+
+.coffee {
+    background: no-repeat center/80% url(../image/coffee.jpg);
+}
+
+.iceCream {
+    background: no-repeat center/60% url(../image/ice-cream.jpg);
+}
+
+.pizza {
+    background: no-repeat center/80% url(../image/pizza.jpg);
+}
